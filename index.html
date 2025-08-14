@@ -43,7 +43,9 @@
             </li>            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Lembaga Desa</a>
-            </li>                                    
+            <li class="nav-item">
+              <a class="nav-link" href="#agenda-acara">Agenda</a>
+            </li>                   
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Kontak Kami</a>
             </li>
@@ -212,16 +214,147 @@
       </div>
     </section>
 
+    <!-- Agenda Acara -->
+     <section id="agenda-acara" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Agenda Acara</h2>
+              <h3 class="section-subheading text-muted">Kegiatan penting yang akan datang</h3>
+            </div>
+          </div>
+          <div class="row align-items-center">
+      <!-- Galeri Gambar -->
+       <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s">
+        <div class="gallery">
+          <img src="img/agenda/UlangTahun.jpg" alt="Acara 1" class="img-fluid rounded shadow">
+          <img src="img/agenda/UlangTahun1.jpg" alt="Acara 2" class="img-fluid rounded shadow">
+          <img src="img/agenda/UlangTahun2.jpg" alt="Acara 3" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      <!-- Teks -->
+      <div class="col-md-6 wow fadeInRight" data-wow-duration="1s">
+        <h4 class="mb-3">Hari Ulang Tahun Desa</h4>
+        <p class="text-muted">
+          Pada tanggal <strong>19 Agustus</strong> setiap tahunnya, Desa kita merayakan Hari Ulang Tahun Desa/Pesta Rakyat dengan berbagai kegiatan menarik seperti lomba tradisional, pameran UMKM, dan hiburan rakyat.
+        </p>
+        <p class="text-muted">
+          Acara ini menjadi momen penting untuk mempererat tali silaturahmi antarwarga dan memperkenalkan potensi desa kepada pengunjung dari luar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <span class="close" id="close">&times;</span>
+      <img id="lightbox-img" src="">
+    </div>
+
+    <style>
+      .gallery img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+    /* Lightbox */
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        justify-content: center;
+        align-items: center;
+      }
+      .lightbox img {
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 10px;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      const gallery = document.querySelectorAll('.gallery img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const close = document.getElementById('close');
+
+      gallery.forEach(img => {
+        img.addEventListener('click', () => {
+          lightbox.style.display = 'flex';
+          lightboxImg.src = img.src;
+        });
+      });
+
+      close.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+      });
+
+      lightbox.addEventListener('click', (e) => {
+        if(e.target !== lightboxImg && e.target !== close) {
+          lightbox.style.display = 'none';
+        }
+      });
+    </script>
+  </section>
+
     <!-- Kontak -->
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Kontak Kami</h2>
-            <h3 class="section-subheading text-muted">Silakan menghubungi kami melalui form di bawah ini:</h3>
+            <h3 class="section-subheading text-muted">Silakan menghubungi kami melalui kontak di bawah ini:</h3>
           </div>
         </div>
-        <div class="row">
+        <!-- Masing-masing informasi dalam kotak terpisah -->
+        <div class="row justify-content-center mt-4 text-center">
+
+        <!-- Alamat -->
+        <div class="col-md-4 mb-4">
+          <div class="bg-white p-4 rounded shadow-sm h-100">
+            <h5 class="text-dark">Alamat</h5>
+            <p class="text-secondary mb-0">Jl. Poros Boepinang-Bambaea<br>La Ea, Kec. Poleang Sel, Kab. Bombana, Sulawesi Tenggara</p>
+          </div>
+        </div>
+
+        <!-- Kontak -->
+        <div class="col-md-4 mb-4">
+          <div class="bg-white p-4 rounded shadow-sm h-100">
+            <h5 class="text-dark">Kontak</h5>
+            <p class="text-secondary mb-0">0821-xxxx-xxxx<br>desalaea@gmail.com</p>
+          </div>
+        </div>
+
+      <!-- Jam Layanan -->
+        <div class="col-md-4 mb-4">
+          <div class="bg-white p-4 rounded shadow-sm h-100">
+            <h5 class="text-dark">Jam Layanan</h5>
+            <p class="text-secondary mb-0">Senin - Jumat<br>08.00 - 15.00 WITA</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+        <!-- <div class="row">
           <div class="col-lg-12">
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
               <div class="row">
@@ -255,24 +388,24 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright 2026 &copy; All Rights Reserved</span>
+            <span class="copyright">Copyright 2025 &copy;  KKN Reguler UHO Batch 2 </span>
           </div>          
           <div class="col-md-4">            
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="https://github.com/rmalan/desa">KKN Reguler UHO Batch 2 Tahun 2026</a>
+                <a href="https://github.com/Mitraaa27/Project_KKN">KKN Reguler UHO Batch 2 Tahun 2025</a>
               </li>              
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
@@ -362,7 +495,7 @@
                   <p class="item-intro text-muted">Desa Laea</p>
                   <img class="img-fluid d-block mx-auto" src="img/profil/visi-misi-full.png" alt="">
                   <p class="text-left"><b>VISI :</b>
-                    <br/>Visi Desa Laea adalah "MELAYANI MASYARAKAT KHUSUSNYA DESA PAGAR BESI DENGAN SEBAIK-BAIKNYA"
+                    <br/>Visi Desa Laea adalah "MELAYANI MASYARAKAT KHUSUSNYA DESA La Ea DENGAN SEBAIK-BAIKNYA"
                     <br/><br/><b>MISI :</b>
                     <br/>Untuk terwujudnya visi tersebut ditetapkan dua upaya/cara atau misi yang akan mendukung pencapaian visi yaitu:
                     <br/>&emsp;1.&ensp;MEMAJUKAN DESA DALAM MISI PEMBANGUNAN
