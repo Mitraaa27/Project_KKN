@@ -1,44 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Halaman Utama -->
   <url>
     <loc>https://project-kkn-kappa.vercel.app/</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Profil Desa -->
-  <url>
-    <loc>https://project-kkn-kappa.vercel.app/profil.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Agenda -->
-  <url>
-    <loc>https://project-kkn-kappa.vercel.app/agenda.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Informasi -->
-  <url>
-    <loc>https://project-kkn-kappa.vercel.app/informasi.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Kontak -->
-  <url>
-    <loc>https://project-kkn-kappa.vercel.app/kontak.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>
