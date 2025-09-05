@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://desalaea.epizy.com/sitemap.xml
+Sitemap: https://project-kkn-kappa.vercel.app/sitemap.xml
