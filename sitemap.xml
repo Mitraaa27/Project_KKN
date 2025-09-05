@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Halaman Utama -->
   <url>
-    <loc>http://desalaea.epizy.com/</loc>
-    <lastmod>2025-08-28</lastmod>
+    <loc>https://project-kkn-kappa.vercel.app/</loc>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- contoh halaman tambahan -->
+  <!-- Profil Desa -->
   <url>
-    <loc>http://desalaea.epizy.com/profil.html</loc>
-    <lastmod>2025-08-28</lastmod>
+    <loc>https://project-kkn-kappa.vercel.app/profil.html</loc>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Agenda -->
   <url>
-    <loc>http://desalaea.epizy.com/agenda.html</loc>
-    <lastmod>2025-08-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://project-kkn-kappa.vercel.app/agenda.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Informasi -->
+  <url>
+    <loc>https://project-kkn-kappa.vercel.app/informasi.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- Kontak -->
   <url>
-    <loc>http://desalaea.epizy.com/kontak.html</loc>
-    <lastmod>2025-08-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://project-kkn-kappa.vercel.app/kontak.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
